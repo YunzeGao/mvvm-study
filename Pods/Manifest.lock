@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - LookinServer (1.0.6)
+  - Masonry (1.1.0)
+  - ReactiveObjC (3.1.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.2.0)
+  - LookinServer
+  - Masonry (~> 1.1.0)
+  - ReactiveObjC (~> 3.1.1)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - LookinServer
+    - Masonry
+    - ReactiveObjC
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  LookinServer: 18155b1e4a08213c236a1dd6b7ca52328a70a1e3
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+
+PODFILE CHECKSUM: 0795471e72b5d5d956511a4c93f498abfac48f3e
+
+COCOAPODS: 1.11.3
