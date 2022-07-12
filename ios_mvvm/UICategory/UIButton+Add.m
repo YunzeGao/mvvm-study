@@ -9,13 +9,19 @@
 
 @implementation UIButton (Add)
 
++ (UIButton *)buttonWithName:(NSString *)name {
+    return [self buttonWithName:name target:nil action:nil];
+}
+
 + (UIButton *)buttonWithName:(NSString *)name target:(id)target action:(SEL)action {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
     [btn setTitle:name forState:UIControlStateNormal];
     [btn setBackgroundColor:[UIColor redColor]];
     [btn.titleLabel setFont:[UIFont systemFontOfSize:27.f weight:UIFontWeightBold]];
     [btn setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
-    [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    if (target && action) {
+        [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    }
     return btn;
 }
 

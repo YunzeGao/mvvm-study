@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIButton (Add)
 
++ (UIButton *)buttonWithName:(NSString *)name;
 + (UIButton *)buttonWithName:(NSString *)name target:(id)target action:(SEL)action;
 
 @end

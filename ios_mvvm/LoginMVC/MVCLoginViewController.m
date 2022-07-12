@@ -9,7 +9,7 @@
 #import "MVCLoginView.h"
 #import "LoginModel.h"
 #import <Masonry/Masonry.h>
-#import <ReactiveObjC/RACEXTScope.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 #import "UIButton+Add.h"
 
 @interface MVCLoginViewController ()

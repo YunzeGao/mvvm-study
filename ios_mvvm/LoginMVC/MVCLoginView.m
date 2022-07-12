@@ -7,11 +7,9 @@
 
 #import "MVCLoginView.h"
 #import <Masonry/Masonry.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 @interface MVCLoginView()
-
-@property (nonatomic, strong) UITextField *nameInput;
-@property (nonatomic, strong) UITextField *passwordInput;
 
 @end
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		237F8A8DE26B45DD040D398C /* Pods_ios_mvvm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C1DAFB8BC653F24A36CAE1 /* Pods_ios_mvvm.framework */; };
+		3E6C908A287C690D006B4B64 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C9089287C690D006B4B64 /* LoginViewModel.m */; };
 		3E953D97287C2AA00060F134 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E953D96287C2AA00060F134 /* AppDelegate.m */; };
 		3E953D9D287C2AA00060F134 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E953D9C287C2AA00060F134 /* ViewController.m */; };
 		3E953DA2287C2AA30060F134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E953DA1287C2AA30060F134 /* Assets.xcassets */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E6C9088287C690D006B4B64 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		3E6C9089287C690D006B4B64 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		3E953D92287C2AA00060F134 /* ios_mvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_mvvm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E953D95287C2AA00060F134 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E953D96287C2AA00060F134 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 			children = (
 				3E953DB3287C32CD0060F134 /* MVVMLoginViewController.h */,
 				3E953DB4287C32CD0060F134 /* MVVMLoginViewController.m */,
+				3E6C9088287C690D006B4B64 /* LoginViewModel.h */,
+				3E6C9089287C690D006B4B64 /* LoginViewModel.m */,
 			);
 			path = LoginMVVM;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				3E953DB5287C32CD0060F134 /* MVVMLoginViewController.m in Sources */,
 				3E953DB8287C34E40060F134 /* LoginModel.m in Sources */,
 				3E953DBF287C3B0B0060F134 /* UIButton+Add.m in Sources */,
+				3E6C908A287C690D006B4B64 /* LoginViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

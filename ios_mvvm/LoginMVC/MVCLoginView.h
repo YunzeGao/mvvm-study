@@ -16,6 +16,9 @@ typedef void(^inputBlock)(NSString *text);
 @property (nonatomic, copy) inputBlock usernameInputBlock;
 @property (nonatomic, copy) inputBlock passwordInputBlock;
 
+@property (nonatomic, strong) UITextField *nameInput;
+@property (nonatomic, strong) UITextField *passwordInput;
+
 @end
 
 NS_ASSUME_NONNULL_END
