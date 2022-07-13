@@ -10,6 +10,7 @@
 #import "MVCLoginViewController.h"
 #import "MVVMLoginViewController.h"
 #import "UIButton+Add.h"
+#import "NetworkRequest.h"
 
 @interface ViewController ()
 
@@ -55,18 +56,28 @@
     [self.navigationController pushViewController:[MVVMLoginViewController new] animated:YES];
 }
 
+- (void)testDemo {
+    NetworkRequest *req = [[NetworkRequest alloc] init];
+    req.GET(@"baidu", @{}).set_modelClass([NetworkBaseResponse class]);
+    req.success(^(NetworkBaseResponse *res){
+        NSLog(@"requestID = %@", res.requestID);
+    }).fail(^(NSError *error, NSString *msg) {
+        NSLog(@"mas = %@", msg);
+    }).commitAsync();
+}
+
 # pragma mark - getters & setters
 
 - (UIButton *)mvcBtn {
     if (!_mvcBtn) {
-        _mvcBtn = [UIButton buttonWithName:@"mvc" target:self  action:@selector(pushToMVC)];
+        _mvcBtn = [UIButton buttonWithName:@"mvc" target:self  action:@selector(testDemo)];
     }
     return _mvcBtn;
 }
 
 - (UIButton *)mvvmBtn {
     if (!_mvvmBtn) {
-        _mvvmBtn = [UIButton buttonWithName:@"mvvm" target:self action:@selector(pushToMVVM)];
+        _mvvmBtn = [UIButton buttonWithName:@"mvvm" target:self action:@selector(testDemo)];
     }
     return _mvvmBtn;
 }

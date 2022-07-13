@@ -6,8 +6,9 @@ target 'ios_mvvm' do
   use_frameworks!
 
   # Pods for ios_mvvm
-	pod 'AFNetworking', '~> 3.2.0'
-	pod 'Masonry', '~> 1.1.0'
-	pod 'LookinServer', :configurations => ['Debug']
-	pod 'ReactiveObjC', '~> 3.1.1'
+	pod 'AFNetworking'
+	pod 'Masonry'
+	pod 'ReactiveObjC'
+  	pod 'YYCategories'
+  	pod 'YYModel'
 end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		237F8A8DE26B45DD040D398C /* Pods_ios_mvvm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C1DAFB8BC653F24A36CAE1 /* Pods_ios_mvvm.framework */; };
+		3E3B7EF428802BA8003BBAA5 /* NetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B7EF328802BA8003BBAA5 /* NetworkConfig.m */; };
 		3E6C908A287C690D006B4B64 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C9089287C690D006B4B64 /* LoginViewModel.m */; };
 		3E953D97287C2AA00060F134 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E953D96287C2AA00060F134 /* AppDelegate.m */; };
 		3E953D9D287C2AA00060F134 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E953D9C287C2AA00060F134 /* ViewController.m */; };
@@ -19,9 +20,15 @@
 		3E953DB8287C34E40060F134 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E953DB7287C34E40060F134 /* LoginModel.m */; };
 		3E953DBB287C35AA0060F134 /* MVCLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E953DBA287C35AA0060F134 /* MVCLoginView.m */; };
 		3E953DBF287C3B0B0060F134 /* UIButton+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E953DBE287C3B0B0060F134 /* UIButton+Add.m */; };
+		3E953DC3287EA5200060F134 /* NetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E953DC2287EA5200060F134 /* NetworkRequest.m */; };
+		3E953DC6287EA6D00060F134 /* NetworkBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E953DC5287EA6D00060F134 /* NetworkBaseResponse.m */; };
+		3EEAFF65287F0DDB00446FDF /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAFF64287F0DDB00446FDF /* Network.m */; };
+		3EEAFF68287F1B0000446FDF /* NSDate+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEAFF67287F1B0000446FDF /* NSDate+Add.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E3B7EF228802BA8003BBAA5 /* NetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkConfig.h; sourceTree = "<group>"; };
+		3E3B7EF328802BA8003BBAA5 /* NetworkConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkConfig.m; sourceTree = "<group>"; };
 		3E6C9088287C690D006B4B64 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
 		3E6C9089287C690D006B4B64 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		3E953D92287C2AA00060F134 /* ios_mvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_mvvm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +50,14 @@
 		3E953DBA287C35AA0060F134 /* MVCLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCLoginView.m; sourceTree = "<group>"; };
 		3E953DBD287C3B0B0060F134 /* UIButton+Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Add.h"; sourceTree = "<group>"; };
 		3E953DBE287C3B0B0060F134 /* UIButton+Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Add.m"; sourceTree = "<group>"; };
+		3E953DC1287EA5200060F134 /* NetworkRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkRequest.h; sourceTree = "<group>"; };
+		3E953DC2287EA5200060F134 /* NetworkRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkRequest.m; sourceTree = "<group>"; };
+		3E953DC4287EA6D00060F134 /* NetworkBaseResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkBaseResponse.h; sourceTree = "<group>"; };
+		3E953DC5287EA6D00060F134 /* NetworkBaseResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkBaseResponse.m; sourceTree = "<group>"; };
+		3EEAFF63287F0DDB00446FDF /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		3EEAFF64287F0DDB00446FDF /* Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		3EEAFF66287F1B0000446FDF /* NSDate+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Add.h"; sourceTree = "<group>"; };
+		3EEAFF67287F1B0000446FDF /* NSDate+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Add.m"; sourceTree = "<group>"; };
 		45C1DAFB8BC653F24A36CAE1 /* Pods_ios_mvvm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_mvvm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E462960EFA993269D9819BB0 /* Pods-ios_mvvm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_mvvm.release.xcconfig"; path = "Target Support Files/Pods-ios_mvvm/Pods-ios_mvvm.release.xcconfig"; sourceTree = "<group>"; };
 		E7A0D4C79F45AC127D6BB86E /* Pods-ios_mvvm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_mvvm.debug.xcconfig"; path = "Target Support Files/Pods-ios_mvvm/Pods-ios_mvvm.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,7 +96,8 @@
 		3E953D94287C2AA00060F134 /* ios_mvvm */ = {
 			isa = PBXGroup;
 			children = (
-				3E953DBC287C3AE50060F134 /* UICategory */,
+				3E953DC0287EA4DF0060F134 /* Network */,
+				3E953DBC287C3AE50060F134 /* Category */,
 				3E953DAF287C2EF70060F134 /* LoginMVVM */,
 				3E953DAE287C2EE50060F134 /* LoginMVC */,
 				3E953D95287C2AA00060F134 /* AppDelegate.h */,
@@ -120,13 +136,30 @@
 			path = LoginMVVM;
 			sourceTree = "<group>";
 		};
-		3E953DBC287C3AE50060F134 /* UICategory */ = {
+		3E953DBC287C3AE50060F134 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				3EEAFF66287F1B0000446FDF /* NSDate+Add.h */,
+				3EEAFF67287F1B0000446FDF /* NSDate+Add.m */,
 				3E953DBD287C3B0B0060F134 /* UIButton+Add.h */,
 				3E953DBE287C3B0B0060F134 /* UIButton+Add.m */,
 			);
-			path = UICategory;
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3E953DC0287EA4DF0060F134 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3EEAFF63287F0DDB00446FDF /* Network.h */,
+				3EEAFF64287F0DDB00446FDF /* Network.m */,
+				3E953DC1287EA5200060F134 /* NetworkRequest.h */,
+				3E953DC2287EA5200060F134 /* NetworkRequest.m */,
+				3E953DC4287EA6D00060F134 /* NetworkBaseResponse.h */,
+				3E953DC5287EA6D00060F134 /* NetworkBaseResponse.m */,
+				3E3B7EF228802BA8003BBAA5 /* NetworkConfig.h */,
+				3E3B7EF328802BA8003BBAA5 /* NetworkConfig.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		56C35A78F0902A18F1D45757 /* Frameworks */ = {
@@ -261,12 +294,17 @@
 			files = (
 				3E953D9D287C2AA00060F134 /* ViewController.m in Sources */,
 				3E953DB2287C32860060F134 /* MVCLoginViewController.m in Sources */,
+				3E3B7EF428802BA8003BBAA5 /* NetworkConfig.m in Sources */,
+				3E953DC6287EA6D00060F134 /* NetworkBaseResponse.m in Sources */,
 				3E953D97287C2AA00060F134 /* AppDelegate.m in Sources */,
 				3E953DA8287C2AA30060F134 /* main.m in Sources */,
+				3EEAFF68287F1B0000446FDF /* NSDate+Add.m in Sources */,
 				3E953DBB287C35AA0060F134 /* MVCLoginView.m in Sources */,
 				3E953DB5287C32CD0060F134 /* MVVMLoginViewController.m in Sources */,
+				3E953DC3287EA5200060F134 /* NetworkRequest.m in Sources */,
 				3E953DB8287C34E40060F134 /* LoginModel.m in Sources */,
 				3E953DBF287C3B0B0060F134 /* UIButton+Add.m in Sources */,
+				3EEAFF65287F0DDB00446FDF /* Network.m in Sources */,
 				3E6C908A287C690D006B4B64 /* LoginViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
