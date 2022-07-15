@@ -7,6 +7,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, xxType) {
+    xxTypeA = 0,
+    xxTypeB = 1,
+};
+
 @interface ViewController : UIViewController
 
 

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		237F8A8DE26B45DD040D398C /* Pods_ios_mvvm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C1DAFB8BC653F24A36CAE1 /* Pods_ios_mvvm.framework */; };
 		3E3B7EF428802BA8003BBAA5 /* NetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B7EF328802BA8003BBAA5 /* NetworkConfig.m */; };
+		3E3B7FC2288166FA003BBAA5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B7FC0288166FA003BBAA5 /* Reachability.m */; };
+		3E3B7FC528816748003BBAA5 /* GGReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B7FC428816748003BBAA5 /* GGReachability.m */; };
 		3E6C908A287C690D006B4B64 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C9089287C690D006B4B64 /* LoginViewModel.m */; };
 		3E953D97287C2AA00060F134 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E953D96287C2AA00060F134 /* AppDelegate.m */; };
 		3E953D9D287C2AA00060F134 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E953D9C287C2AA00060F134 /* ViewController.m */; };
@@ -29,6 +31,10 @@
 /* Begin PBXFileReference section */
 		3E3B7EF228802BA8003BBAA5 /* NetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkConfig.h; sourceTree = "<group>"; };
 		3E3B7EF328802BA8003BBAA5 /* NetworkConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkConfig.m; sourceTree = "<group>"; };
+		3E3B7FC0288166FA003BBAA5 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3E3B7FC1288166FA003BBAA5 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3E3B7FC328816748003BBAA5 /* GGReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGReachability.h; sourceTree = "<group>"; };
+		3E3B7FC428816748003BBAA5 /* GGReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGReachability.m; sourceTree = "<group>"; };
 		3E6C9088287C690D006B4B64 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
 		3E6C9089287C690D006B4B64 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		3E953D92287C2AA00060F134 /* ios_mvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_mvvm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +81,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E3B7FBB2881664F003BBAA5 /* GGReachability */ = {
+			isa = PBXGroup;
+			children = (
+				3E3B7FBF288166FA003BBAA5 /* Reachability */,
+				3E3B7FC328816748003BBAA5 /* GGReachability.h */,
+				3E3B7FC428816748003BBAA5 /* GGReachability.m */,
+			);
+			path = GGReachability;
+			sourceTree = "<group>";
+		};
+		3E3B7FBF288166FA003BBAA5 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				3E3B7FC0288166FA003BBAA5 /* Reachability.m */,
+				3E3B7FC1288166FA003BBAA5 /* Reachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		3E953D89287C2AA00060F134 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +121,7 @@
 		3E953D94287C2AA00060F134 /* ios_mvvm */ = {
 			isa = PBXGroup;
 			children = (
+				3E3B7FBB2881664F003BBAA5 /* GGReachability */,
 				3E953DC0287EA4DF0060F134 /* Network */,
 				3E953DBC287C3AE50060F134 /* Category */,
 				3E953DAF287C2EF70060F134 /* LoginMVVM */,
@@ -296,12 +322,14 @@
 				3E953DB2287C32860060F134 /* MVCLoginViewController.m in Sources */,
 				3E3B7EF428802BA8003BBAA5 /* NetworkConfig.m in Sources */,
 				3E953DC6287EA6D00060F134 /* NetworkBaseResponse.m in Sources */,
+				3E3B7FC2288166FA003BBAA5 /* Reachability.m in Sources */,
 				3E953D97287C2AA00060F134 /* AppDelegate.m in Sources */,
 				3E953DA8287C2AA30060F134 /* main.m in Sources */,
 				3EEAFF68287F1B0000446FDF /* NSDate+Add.m in Sources */,
 				3E953DBB287C35AA0060F134 /* MVCLoginView.m in Sources */,
 				3E953DB5287C32CD0060F134 /* MVVMLoginViewController.m in Sources */,
 				3E953DC3287EA5200060F134 /* NetworkRequest.m in Sources */,
+				3E3B7FC528816748003BBAA5 /* GGReachability.m in Sources */,
 				3E953DB8287C34E40060F134 /* LoginModel.m in Sources */,
 				3E953DBF287C3B0B0060F134 /* UIButton+Add.m in Sources */,
 				3EEAFF65287F0DDB00446FDF /* Network.m in Sources */,
@@ -439,6 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8K2955XFW8;
@@ -448,14 +477,15 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gaoyunze.ios-mvvm";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaoyunze.mvvm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -467,6 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8K2955XFW8;
@@ -476,14 +507,15 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gaoyunze.ios-mvvm";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaoyunze.mvvm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -11,6 +11,7 @@
 #import "MVVMLoginViewController.h"
 #import "UIButton+Add.h"
 #import "NetworkRequest.h"
+#import "GGReachability/GGReachability.h"
 
 @interface ViewController ()
 
@@ -28,7 +29,12 @@
     
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
-    [self setupUI];
+//    [GGReachability startWithDefaultDomain:@"www.baidu.com"];
+#if TARGET_OS_SIMULATOR
+    NSLog(@"nb");
+#else
+    NSLog(@"nnb");
+#endif
 }
 
 - (void)setupUI {
